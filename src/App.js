@@ -1,9 +1,10 @@
 import React from 'react';
-
 import { Container, Col, Row } from 'react-bootstrap';
 
-import './App.css';
+import 'react-widgets/dist/css/react-widgets.css';
 import 'bootstrap/dist/css/bootstrap.css';
+
+import './App.css';
 
 import { Colors } from './components/Colors';
 import { JSONPretty } from './components/JSONPretty';
@@ -14,6 +15,7 @@ import { QRCodeGenerator } from './components/QRCodeGenerator';
 import { SQLFormatter } from './components/SQLFormatter';
 import { URLEnDeCoder } from './components/URLEnDeCoder';
 import { XMLPretty } from './components/XMLPretty';
+import { Box } from './common/Box';
 
 function App() {
   return (
@@ -21,31 +23,49 @@ function App() {
       <Container fluid>
         <Row>
           <Col md={4} xs={12}>
-            <QRCodeGenerator />
+            <Box>
+              <QRCodeGenerator />
+            </Box>
           </Col>
           <Col md={4} xs={12}>
-            <JSONPretty />
+            <Box>
+              <JSONPretty />
+            </Box>
           </Col>
           <Col md={4} xs={12}>
-            <MarkdownImageLinkConverter />
+            <Box>
+              <MarkdownImageLinkConverter />
+            </Box>
           </Col>
           <Col md={4} xs={12}>
-            <OPCUANodeIdConverter />
+            <Box>
+              <OPCUANodeIdConverter />
+            </Box>
           </Col>
           <Col md={4} xs={12}>
-            <SQLFormatter />
+            <Box>
+              <SQLFormatter />
+            </Box>
           </Col>
           <Col md={4} xs={12}>
-            <URLEnDeCoder />
+            <Box>
+              <URLEnDeCoder />
+            </Box>
           </Col>
           <Col md={4} xs={12}>
-            <Colors />
+            <Box>
+              <Colors />
+            </Box>
           </Col>
           <Col md={4} xs={12}>
-            <LaTeXURLSanitizer />
+            <Box>
+              <LaTeXURLSanitizer />
+            </Box>
           </Col>
           <Col md={4} xs={12}>
-            <XMLPretty />
+            <Box>
+              <XMLPretty />
+            </Box>
           </Col>
         </Row>
       </Container>

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Webtools",
+  "name": "A collection of tools: QR Code Generator, Markdown Image Converter to HTML, JSON Prettify and sanitize, LaTeX Url Sanitizer, OPC UA Node Id Converter, SQL Formatter, XML Formatter, URL Encoder, URL Decoder",
   "icons": [
     {
       "src": "favicon.ico",
